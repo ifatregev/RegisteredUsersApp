@@ -1,14 +1,11 @@
-import React, {Component} from 'react';
-import {Spinner} from 'reactstrap';
-import './AppSpinner.scss';
+import React from 'react';
+import './ErrorPage.scss';
 
-export default class AppSpinner extends Component {
+const ErrorPage = ({error}) => (
+        <div className="error-page">
+            <h1>Something went wrong...</h1>
+            {error}
+        </div>
+);
 
-    render() {
-        return (
-            <div className="app-spinner">
-                <Spinner/>
-            </div>
-        );
-    }
-}
+export default ErrorPage;

@@ -1,15 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Spinner} from 'reactstrap';
-import './Spinner.scss';
+import './AppSpinner.scss';
 
+const AppSpinner = () => (
+        <div className="app-spinner">
+            <Spinner/>
+        </div>
+);
 
-export default class Spinner extends Component {
-
-    render() {
-        return (
-            <div className="spinner">
-                <Spinner color="light"/>
-            </div>
-        );
-    }
-}
+export default AppSpinner;

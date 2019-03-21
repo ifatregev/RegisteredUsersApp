@@ -1,0 +1,29 @@
+.user-profile{
+  .user-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .user-pic {
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    margin-top: 40px;
+
+    .user-name{
+      align-items: center;
+    }
+
+    .user-pic {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
